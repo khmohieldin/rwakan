@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>روقان — لانشر عربي خفيف لأندرويد</title>
+<meta name="description" content="روقان (RWAKAN): شاشة رئيسية عربية خفيفة بأيقونات قابلة للتخصيص، مجلدات ملوّنة، خزنة للتطبيقات برقم سري، وخلفيات تعمل بلا إنترنت. إصدار 1.1.0.">
+<meta name="theme-color" content="#0f1512" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<a class="skip" href="#main">تخطَّ إلى المحتوى</a>
+
+<header class="bar">
+  <div class="bar-inner">
+    <span class="brand" aria-label="روقان">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-name">روقان</span>
+      <span class="brand-latin">RWAKAN</span>
+    </span>
+    <nav class="nav" aria-label="أقسام الصفحة">
+      <a href="#shots">معاينات</a>
+      <a href="#features">المزايا</a>
+      <a href="#vault">الخزنة</a>
+      <a href="#privacy">الخصوصية</a>
+      <a href="#download">التحميل</a>
+      <a href="#faq">أسئلة</a>
+    </nav>
+    <button id="theme" class="icon-btn" type="button" aria-label="تبديل المظهر بين فاتح وداكن">◐</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>شاشة رئيسية تتكلم عربيتك</h1>
+      <p class="lead">
+        لانشر أصلي خفيف، بدون إعلانات وبدون تتبّع: بحث فوري بيتعامل مع العربية صح (من غير تشكيل ومن غير
+        فرق همزة)، مجلدات بألوان، «مجلد شاشة» بحجم شاشة هاتف مصغّرة، وخزنة للتطبيقات برقم سري. بيشتغل على
+        أي أندرويد من إصدار 6.0 وفوق.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="./RWAKAN.apk" download>حمّل روقان 1.1.0</a>
+        <a class="btn-ghost" href="#download">طريقة التثبيت</a>
+      </div>
+      <ul class="facts">
+        <li>حجم الملف <strong>6.4 ميجابايت</strong></li>
+        <li>أندرويد <strong>6.0</strong> وأحدث</li>
+        <li>موقّّع ومجرّب على <strong>أندرويد 16</strong></li>
+        <li>بلا إعلانات وبلا تحليلات</li>
+      </ul>
+    </div>
+
+    <div class="phone-wrap">
+      <div class="phone">
+        <div class="phone-screen" id="reel" role="group" aria-roledescription="شرائح" aria-label="لقطات حقيقية من داخل روقان تتبدل تلقائيًا">
+          <img class="slide on" src="./screens/home.jpg" width="720" height="1600" data-caption="الشاشة الرئيسية: الساعة والتاريخ الهجري والطقس، والمجلدات الملوّنة وشريط المفضلة." alt="الشاشة الرئيسية: ساعة وتاريخ ميلادي وهجري وكلمة اليوم والطقس، وتحتها شبكة مجلدات ملوّنة وشريط مفضلة.">
+          <img class="slide" src="./screens/drawer.jpg" width="720" height="1600" data-caption="الدرج: بحث فوري بالعربي والإنجليزي، وشرائح للكل والمفضلة والحديث والتصنيفات." alt="درج التطبيقات: شريط بحث أعلى الصفحة، وشرائح الكل والمفضلة والحديثة وتصنيف جديد، وشبكة أيقونات التطبيقات.">
+          <img class="slide" src="./screens/folder.jpg" width="720" height="1600" data-caption="جوه المجلد: تطبيقاته كلّها قدامك، وزر «إضافة تطبيقات» تحت." alt="نافذة مجلد تطبيقات جوجل: أيقونات Fit وDrive وChrome ومتجر Play وGmail وغيرها، وزر إضافة تطبيقات أسفلها.">
+          <img class="slide" src="./screens/app-menu.jpg" width="720" height="1600" data-caption="ضغطة مطوّلة على أي تطبيق: تغيّر اسمه، وتحطّ له إطار، وتنقله للخزنة." alt="قائمة منبثقة لتطبيق الآلة الحاسبة فيها فتح، سحب للترتيب، تثبيت في شريط المفضلة، إضافة إلى تصنيف، نقل إلى مجلد، تغيير اسم التطبيق، إطار الأيقونة، إخفاء من اللانشر، نقل إلى الخزنة الخاصة، معلومات التطبيق.">
+          <img class="slide" src="./screens/studio.jpg" width="720" height="1600" data-caption="استوديو الشكل: شايف الشاشة قدامك وأنت بتقلّب الأشكال، و5 أشكال جاهزة." alt="شاشة استوديو الشكل: معاينة مباشرة للشاشة الرئيسية أعلى الصفحة، وتحتها صف أشكال جاهزة باسم روق وليل وزمرد وبحر وورد.">
+          <img class="slide" src="./screens/settings.jpg" width="720" height="1600" data-caption="الإعدادات: اللون والشكل وحجم الأيقونات والخط وعدد الأعمدة والمسافات." alt="صفحة الإعدادات وفيها المظهر: استوديو الشكل، الوضع فاتح، اللون المميز ذهبي، لون مخصص، شكل الأيقونات مربع، حجم الأيقونات ٦٨ نقطة، حجم الخط كبير، عدد الأعمدة ٤، المسافات، إظهار أسماء التطبيقات.">
+        </div>
+      </div>
+      <div class="reel-dots" id="reel-dots" role="tablist" aria-label="اختيار اللقطة"></div>
+      <p class="reel-caption" id="reel-caption" aria-live="polite">الشاشة الرئيسية: الساعة والتاريخ الهجري والطقس، والمجلدات الملوّنة وشريط المفضلة.</p>
+    </div>
+  </section>
+
+  <section id="shots" class="section">
+    <h2>من جوه روقان</h2>
+    <p class="section-note">لقطات حقيقية من هاتف أندرويد 16. اضغط أي صورة تشوفها بالحجم الكامل.</p>
+    <div class="shots">
+      <figure class="shot">
+        <button type="button" class="shot-btn" data-src="./screens/home.jpg" data-caption="الشاشة الرئيسية في روقان">
+          <img src="./screens/home.jpg" width="720" height="1600" loading="lazy"
+               alt="الشاشة الرئيسية: ساعة ٣:١٩ م وتاريخ ميلادي وهجري وكلمة اليوم والطقس ٢٧ درجة غائم، وتحتها شبكة مجلدات ملوّنة وشريط مفضلة.">
+        </button>
+        <figcaption>الرئيسية: الساعة والتاريخ الهجري وكلمة اليوم والطقس، وتحتهم المجلدات الملوّنة وشريط المفضلة.</figcaption>
+      </figure>
+      <figure class="shot">
+        <button type="button" class="shot-btn" data-src="./screens/drawer.jpg" data-caption="درج التطبيقات والبحث الفوري">
+          <img src="./screens/drawer.jpg" width="720" height="1600" loading="lazy"
+               alt="درج التطبيقات: شريط بحث أعلى الصفحة، وشرائح الكل والمفضلة والحديثة وتصنيف جديد، وشبكة أيقونات التطبيقات.">
+        </button>
+        <figcaption>الدرج: بحث فوري بالعربي والإنجليزي، وشرائح للكل والمفضلة والحديث والتصنيفات.</figcaption>
+      </figure>
+      <figure class="shot">
+        <button type="button" class="shot-btn" data-src="./screens/folder.jpg" data-caption="نافذة المجلد وإضافة التطبيقات">
+          <img src="./screens/folder.jpg" width="720" height="1600" loading="lazy"
+               alt="نافذة مجلد تطبيقات جوجل: أيقونات Fit وDrive وChrome ومتجر Play وGmail وغيرها، وزر إضافة تطبيقات أسفلها.">
+        </button>
+        <figcaption>جوه المجلد: تطبيقاته كلّها قدامك، وزر «إضافة تطبيقات» تحت.</figcaption>
+      </figure>
+      <figure class="shot">
+        <button type="button" class="shot-btn" data-src="./screens/app-menu.jpg" data-caption="قائمة الضغط المطوّل على التطبيق">
+          <img src="./screens/app-menu.jpg" width="720" height="1600" loading="lazy"
+               alt="قائمة منبثقة لتطبيق الآلة الحاسبة فيها: فتح، سحب للترتيب، تثبيت في شريط المفضلة، إضافة إلى تصنيف، نقل إلى مجلد، تغيير اسم التطبيق، إطار الأيقونة، إخفاء من اللانشر، نقل إلى الخزنة الخاصة، معلومات التطبيق.">
+        </button>
+        <figcaption>ضغطة مطوّلة على أي تطبيق: تغيّر اسمه، وتحطّ له إطار، وتنقله للخزنة.</figcaption>
+      </figure>
+      <figure class="shot">
+        <button type="button" class="shot-btn" data-src="./screens/studio.jpg" data-caption="استوديو الشكل بمعاينة مباشرة">
+          <img src="./screens/studio.jpg" width="720" height="1600" loading="lazy"
+               alt="شاشة استوديو الشكل: معاينة مباشرة للشاشة الرئيسية أعلى الصفحة، وتحتها صف أشكال جاهزة باسم روق وليل وزمرد وبحر وورد.">
+        </button>
+        <figcaption>استوديو الشكل: شايف الشاشة قدامك وأنت بتقلّب الأشكال، و5 أشكال جاهزة.</figcaption>
+      </figure>
+      <figure class="shot">
+        <button type="button" class="shot-btn" data-src="./screens/settings.jpg" data-caption="الإعدادات — قسم المظهر">
+          <img src="./screens/settings.jpg" width="720" height="1600" loading="lazy"
+               alt="صفحة الإعدادات وفيها المظهر: استوديو الشكل، الوضع فاتح، اللون المميز ذهبي، لون مخصص، شكل الأيقونات مربع، حجم الأيقونات ٦٨ نقطة، حجم الخط كبير، عدد الأعمدة ٤، المسافات، إظهار أسماء التطبيقات.">
+        </button>
+        <figcaption>الإعدادات: اللون والشكل وحجم الأيقونات والخط وعدد الأعمدة والمسافات.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <h2>اللي جوه</h2>
+    <p class="section-note">كل نقطة دي شغّالة فعلًا في الإصدار المرفوع، مش وعد لإصدار جاي.</p>
+    <div class="grid">
+      <article class="card">
+        <h3>بحث بيفهم العربية</h3>
+        <p>اكتب «كله» يطلعلك «كلّ»، من غير تشكيل ومن غير ما تهتم بالهمزة. بحث فوري في كل التطبيقات، وشرائح للكل والمفضلة والحديثة.</p>
+      </article>
+      <article class="card">
+        <h3>مجلد شاشة</h3>
+        <p>شاشة هاتف مصغّرة على الرئيسية بتعرض تطبيقاتها. مرّر جواها بإصبعك من غير ما تفتحها، وخمس مستويات حجم جاهزة.</p>
+      </article>
+      <article class="card">
+        <h3>خزنة التطبيقات</h3>
+        <p>اختر تطبيقات تحط وراها رقم سري من 4 لـ 8 أرقام، مع فتح بالبصمة أو الوجه وقفل تلقائي لما تسيب الشاشة.</p>
+      </article>
+      <article class="card">
+        <h3>الطقس جنب الساعة</h3>
+        <p>بيتحدّث كل نص ساعة من Open-Meteo، باختيار مدينة من 20 مدينة أو بمتابعة موقعك تلقائيًا. ومفيش إنترنت؟ يفضل آخر قراءة قدامك.</p>
+      </article>
+      <article class="card">
+        <h3>تغيير اسم أي تطبيق</h3>
+        <p>اضغط مطوّل على أيقونة ← «تغيير اسم التطبيق»، والاسم الجديد يبان في الرئيسية والدرج والمفضلة والبحث. ومعاه إطار ملوّن حوالين الأيقونة.</p>
+      </article>
+      <article class="card">
+        <h3>نسخ واتساب المستنسخ</h3>
+        <p>النسخة اللي في ملف تعريف تاني بتظهر لوحدها باسمها متبوع بـ«(نسخة)» وشارة صغيرة على الأيقونة، وبتفتح ببياناتها هي.</p>
+      </article>
+      <article class="card">
+        <h3>28 خلفية جاهزة</h3>
+        <p>صور مضمّنة جوه التطبيق نفسه — من غير إنترنت ولا حساب — مع خلفيات متدرجة، وصورة من المعرض بقص ومعاينة، أو صورة من رابط تلصقه.</p>
+      </article>
+      <article class="card">
+        <h3>شرح أول تشغيل</h3>
+        <p>خمس بطاقات متحركة بعد التنصيب مباشرة تعلمك الإعدادات، إضافة تطبيق، عمل مجلد، شريط المفضلة، والترتيب بالسحب. مرة واحدة، وتقدر تعيده من الإعدادات.</p>
+      </article>
+      <article class="card">
+        <h3>نسخة احتياطية بملف واحد</h3>
+        <p>ترتيبك كلّه — الإعدادات، المجلدات، المخفي، أسماء التطبيقات، الخلفية — يتصدّر في ملف JSON وترجّعه في أي هاتف.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="vault" class="section narrow">
+    <h2>الخزنة: بتعمل إيه بالظبط</h2>
+    <div class="split">
+      <div>
+        <h3 class="yes">بتعمل</h3>
+        <ul>
+          <li>تخبي تطبيقات مختارة ورا رقم سري (بصمة مشفرة، مش نص صريح).</li>
+          <li>تفتح بالبصمة أو الوجه لو جهازك بيسمح.</li>
+          <li>تقفل لوحدها لما تسيب الشاشة، وتخفي التطبيقات من الرئيسية والدرج والبحث.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="no">ما بتعملش (حدود أندرويد)</h3>
+        <ul>
+          <li>ما بتعزلش بيانات التطبيق عن النظام.</li>
+          <li>ما بتمنعش تطبيقات تانية أو الإعدادات من رؤية التطبيقات دي.</li>
+          <li>لو عايز عزل كامل للتطبيقات استخدم «المساحة الخاصة» في أندرويد 15+ أو «ملف العمل».</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" class="section narrow">
+    <h2>الصلاحيات وليه</h2>
+    <table class="table-responsive">
+      <caption class="sr-only">قائمة الصلاحيات وسبب كل واحدة</caption>
+      <thead><tr><th>الصلاحية</th><th>بتتستخدم ليه</th></tr></thead>
+      <tbody>
+        <tr><td>عرض التطبيقات</td><td>أي لانشر محتاجها عشان يوريك تطبيقاتك أصلًا.</td></tr>
+        <tr><td>تعيين خلفية</td><td>لما تختار بنفسك «تعيين كخلفية للجهاز».</td></tr>
+        <tr><td>البصمة</td><td>فتح الخزنة.</td></tr>
+        <tr><td>الإنترنت</td><td>جلب الطقس فقط. مفيش أي بيانات استخدام بتخرج من الجهاز.</td></tr>
+        <tr><td>الموقع التقريبي</td><td>اختيارية، وبتطلب مرة واحدة بس لو اخترت «موقعي الحالي» للطقس.</td></tr>
+      </tbody>
+    </table>
+    <p class="none">مفيش وصول لجهات الاتصال، ولا للرسائل، ولا لخدمات إمكانية الوصول، ولا خدمات شغّالة في الخلفية.</p>
+  </section>
+
+  <section id="download" class="section">
+    <h2>التحميل والتثبيت</h2>
+    <div class="dl-card">
+      <div class="dl-main">
+        <p class="dl-name">RWAKAN.apk</p>
+        <p class="dl-meta">الإصدار 1.1.0 · 6.4 ميجابايت · أندرويد 6.0+ · موقّع بمفتاح روقان</p>
+        <a class="btn-primary" href="./RWAKAN.apk" download>تنزيل الملف</a>
+      </div>
+      <ol class="steps">
+        <li>نزّل الملف من الزر ده.</li>
+        <li>افتحه من تطبيق «الملفات» على الهاتف.</li>
+        <li>لو ظهر تحذير «تطبيقات غير معروفة»: اضغط «الإعدادات» ← اسمح لـ«الملفات» بهذا المصدر ← ارجع.</li>
+        <li>اضغط «تثبيت» ← «فتح».</li>
+        <li>اضغط زر Home واختار «روقان» ← «دائمًا» عشان يبقى شاشتك الرئيسية.</li>
+        <li>هتلاقي شرح أول تشغيل ظاهر مرة واحدة. ولو عايز تعيده: اضغط مطوّل على مكان فاضي ← الإعدادات ← «إعادة تشغيل الشرح».</li>
+      </ol>
+    </div>
+    <p class="note">
+      روقان بيتوزع من هنا مباشرة (مش من Google Play). لو ثبتّه فوق نسخة قديمة من نفس روقان ترتيبك بيتحفظ؛
+      أما لو كنت ثابت نسخة تجريبية مختلفة التوقيع فلازم تحذفها الأول — صدّر نسخة احتياطية من إعداداتك قبلها.
+    </p>
+  </section>
+
+  <section id="faq" class="section narrow">
+    <h2>أسئلة بتتكرر</h2>
+    <details>
+      <summary>ليه مش على Google Play؟</summary>
+      <p>لأنه بيتوزع دلوقتي كملف مباشر. التحميل من هنا محتاج تسمح لمرة واحدة بمصدر غير معروف، وبعدين التطبيق بيتحدّث طبيعي لو نزّلت ملفًا بإصدار أعلى.</p>
+    </details>
+    <details>
+      <summary>هل بياخد مكان شاشة جهازي بشكل دائم؟</summary>
+      <p>لأ. أي وقت تقدر ترجع شاشتك الأساسية من إعدادات النظام ← التطبيقات ← التطبيقات الافتراضية، وترتيب روقان بيتحفظ لما ترجعه.</p>
+    </details>
+    <details>
+      <summary>نسيّت رقم الخزنة؟</summary>
+      <p>من داخل الخزنة فيه «إعادة ضبط الخزنة»: بيحذف الرقم السري ويرجّع كل تطبيقات الخزنة للانشر. مفيش استرجاع للرقم نفسه — ده مقصود في التصميم.</p>
+    </details>
+    <details>
+      <summary>هي التطبيقات بتبعت حاجات بره؟</summary>
+      <p>لأ. الاتصال الوحيد اللي بيحصل هو سؤال الطقس لـ Open-Meteo، ومرة واحدة بس لو سمحت بالموقع عشان يحوّل إحداثياتك لمنطقتك. ترتيب شاشتك وكل بياناتك جوه جهازك.</p>
+    </details>
+    <details>
+      <summary>إيه أقل وأعلى جهاز اشتغل عليه؟</summary>
+      <p>أقل إصدار مدعوم 6.0 (API 23)، والتجربة الفعلية كانت على أندرويد 13 و16.</p>
+    </details>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>روقان (RWAKAN) — لانشر عربي، بناء Kotlin أصلي بدون WebView. الإصدار 1.1.0.</p>
+  <a class="btn-top" href="#main">فوق ↑</a>
+</footer>
+
+<dialog id="viewer" aria-label="مشاهدة الصورة بالحجم الكامل">
+  <div class="viewer-box">
+    <img id="viewer-img" alt="">
+    <p id="viewer-caption"></p>
+    <button id="viewer-close" class="viewer-close" type="button">إغلاق ✕</button>
+  </div>
+</dialog>
+
+<script src="./app.js"></script>
+</body>
+</html>
